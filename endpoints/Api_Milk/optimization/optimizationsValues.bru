@@ -1,0 +1,23 @@
+meta {
+  name: optimizationsValues
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{base_url}}/optimizations/optimizeValues
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoLWFwaSIsInN1YiI6Im5ldG9AZ21haWwuY29tIiwiZXhwIjoxNzIxODY5NTMzLCJDbGFpbXMiOiJVU0VSIn0.t57A0gbQy5w-DNQjtqdYnSh_oSJda47JEmGtvL9YUVM
+}
+
+body:json {
+  {
+    "valorPretendido": 200,
+    "valorLeite": 2.20,
+    "valorQueijo": 4.93
+  }
+}

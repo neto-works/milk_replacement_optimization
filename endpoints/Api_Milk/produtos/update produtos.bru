@@ -1,0 +1,19 @@
+meta {
+  name: update produtos
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{base_url}}/produtos/1
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "nome": "Leite",
+    "unidadeMedida": "litros",
+    "preco": 1.75
+  }
+}

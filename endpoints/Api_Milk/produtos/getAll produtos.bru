@@ -1,0 +1,15 @@
+meta {
+  name: getAll produtos
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{base_url}}/produtos
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoLWFwaSIsInN1YiI6Im5ldG9AZ21haWwuY29tIiwiZXhwIjoxNzIxOTQxOTMwLCJDbGFpbXMiOiJBRE1JTiBVU0VSIn0.GO3NZXb7W-p6wSECFO1-7NgaqyLTHnS0KqoHa9vKX3s
+}

@@ -1,0 +1,21 @@
+meta {
+  name: create usuario
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{base_url}}/auth/register
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+  
+    "username": "neto",
+    "email": "neto@gmail.com",
+    "password": "Neto3000#",
+    "role": "ADMIN"
+  }
+}

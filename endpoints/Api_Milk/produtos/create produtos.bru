@@ -1,0 +1,19 @@
+meta {
+  name: create produtos
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{base_url}}/produtos
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "nome": "Leite",
+    "unidadeMedida": "litros",
+    "preco": 1.75
+  }
+}

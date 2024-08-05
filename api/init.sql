@@ -1,0 +1,2 @@
+CREATE DATABASE IF NOT EXISTS api_milk;
+USE api_milk;
